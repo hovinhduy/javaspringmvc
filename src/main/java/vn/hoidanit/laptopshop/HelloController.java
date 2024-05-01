@@ -11,4 +11,14 @@ public class HelloController {
         return "Hello World from Spring Boot! 1";
     }
 
+    @GetMapping("/user")
+    public String user() {
+        return "Hello User!";
+    }
+
+    @GetMapping("/admin")
+    public String admin() {
+        return "Hello Admin!";
+    }
+
 }
